@@ -2,10 +2,10 @@ const { Pool } = require('pg');
 
 // URL de conexión a la base de datos
 //conexion externa
-// const connectionString = 'postgres://root:9UXesKV3MY5e80zF1sIkRwfkdCzkjSVV@dpg-cnjnenvsc6pc73fsdcbg-a.oregon-postgres.render.com/citamedica_bk7h';
+const connectionString = 'postgres://root:9UXesKV3MY5e80zF1sIkRwfkdCzkjSVV@dpg-cnjnenvsc6pc73fsdcbg-a.oregon-postgres.render.com/citamedica_bk7h';
 
 //conexion interna
-const connectionString = 'postgres://root:9UXesKV3MY5e80zF1sIkRwfkdCzkjSVV@dpg-cnjnenvsc6pc73fsdcbg-a/citamedica_bk7h';
+// const connectionString = 'postgres://root:9UXesKV3MY5e80zF1sIkRwfkdCzkjSVV@dpg-cnjnenvsc6pc73fsdcbg-a/citamedica_bk7h';
 
 // Configuración de la conexión a la base de datos utilizando la URL
 const pool = new Pool({

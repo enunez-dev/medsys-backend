@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 app.use('/specialty', authMiddleware, specialtyRoutes);
 app.use('/doctor', authMiddleware, doctorRoutes);
 app.use('/appointment', authMiddleware, appointmentRoutes);
-app.use('/patient', authMiddleware, patientRoutes);
+app.use('/patient', patientRoutes);
 app.use('/auth', authRoutes);
 
 // Puerto en el que el servidor escuchará
