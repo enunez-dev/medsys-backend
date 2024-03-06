@@ -9,7 +9,7 @@ exports.getAppointmentByDoctorData = async (date, doctorId) => {
         a.date_register_patient
         FROM appointment a inner join doctor_schedule s on a.doctor_schedule_id = s.id
         where s.doctor_id=${doctorId} and 
-        s.date_schedule = '${date} order by a.id'`;
+        s.date_schedule = '${date}' order by a.id`;
         const result = await executeQuery(query);
         return {
             error: '',
